@@ -1,20 +1,26 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
+import Slider from "react-slick";
 //import {maldive} from '../images/maldive.jpg';
 import './slide.css';
  
 const slideImages = [
-  '/images/maldive.jpg',
-  '/images/maldive1.jpg',
-  '/images/maldive2.jpg',
-  // '../images/maldive3.jpg',
-  // '../images/maldive4.jpg',
-  // '../images/maldive5.jpg',
-  // '../images/maldive6.jpg',
-  // '../images/maldive7.jpg',
+  require('../images/maldive.jpg'),
+  require('../images/maldive1.jpg'),
+  require('../images/maldive2.jpg'),
+  require('../images/maldive3.jpg'),
+  require('../images/maldive4.jpg'),
+  require('../images/maldive5.jpg'),
+  require('../images/maldive6.jpg'),
+  require('../images/maldive7.jpg'),
 ];
-
- 
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 const properties = {
   duration: 2000,
   transitionDuration: 500,
@@ -25,20 +31,17 @@ const properties = {
 //  console.log('TEEE'+maldive)
 const Slideshow = () => {
   const load_image = slideImages.map(images => (
-    <div className="each-slide">    
-    {images}
-    <div style={{'backgroundImage': `url(` + images + `)`}}>
-      <span>Slide 1</span>
+    <div  key={images}>    
+      <div className="image-center" style={{'background-image':'cover','width':'100%','backgroundImage': `url(` +images+ `)`}}>      
     </div>
     </div> 
     ));
     
+
     return (
-      // <Slide {...properties}> 
-      <div>   
-        <img src='/images/maldive2.jpg' width="50px"></img>
-        </div>
-      // </Slide>
+      <Slide {...properties}> 
+          {load_image}
+    </Slide>
     )
 }
 

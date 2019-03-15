@@ -1,3 +1,4 @@
+
 .slide-container {
     width: 70%;
     margin: auto; }
@@ -10,7 +11,8 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 300px;
+    height: 400px;
+    padding-top: 100px;
   }
   
   .each-slide span {
@@ -41,11 +43,8 @@
     margin: 0;
     background: #adceed;
   }
-
-  .trees__tree {    
-    background: url('../images/maldive2.jpg') no-repeat;
-    /* background-size: 30px; * moved this property down */
-    /* float: left; */
-    /* height: 50px;
-    width: 30px; */
-}
+  .image-center{
+    background-image: cover;   
+    height: 300px;    
+  }
+ 
