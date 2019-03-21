@@ -1,9 +1,8 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import Slider from "react-slick";
-//import {maldive} from '../images/maldive.jpg';
+
 import './slide.css';
- 
+import Swiper from 'react-slider-swiper';
 const slideImages = [
   require('../images/maldive.jpg'),
   require('../images/maldive1.jpg'),
@@ -14,34 +13,34 @@ const slideImages = [
   require('../images/maldive6.jpg'),
   require('../images/maldive7.jpg'),
 ];
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 2000,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-const properties = {
-  duration: 2000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-  arrows: true
+
+
+const params = {
+  pagination: '.swiper-pagination ',
+  paginationCustomizedClass: 'customized-swiper-pagination', // Add your class name for pagination container
+  paginationClickable: true,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  nextButtonCustomizedClass: 'nextButtonCustomizedClass', // Add your class name for next button
+  prevButtonCustomizedClass: 'customized-swiper-button-prev', // Add your class name for prev button
+  containerClass: 'customized-swiper-container swiper-container ', // Replace swiper-container with customized-swiper-container
+  spaceBetween: 30 
 }
-//  console.log('TEEE'+maldive)
+
 const Slideshow = () => {
   const load_image = slideImages.map(images => (
-    <div  key={images}>    
-      <div className="image-center" style={{'background-image':'cover','width':'100%','backgroundImage': `url(` +images+ `)`}}>      
-    </div>
+    <div key={images}>    
+
+      <div className="image-center" style={{'width':'100%','backgroundImage': `url(` +images+ `)`}}/>      
+
     </div> 
     ));
     
 
     return (
-      <Slide {...properties}> 
+      <Swiper {...params}> 
           {load_image}
-    </Slide>
+    </Swiper>
     )
 }
 

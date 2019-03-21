@@ -3,7 +3,7 @@ import './App.css';
 // import Home from './pages/home';
 // import Body from './pages/body';
 import Slideshow from './pages/slide_effect';
-
+import Swiper from 'react-slider-swiper';
 
 class App extends Component {
   render() {
@@ -13,7 +13,8 @@ class App extends Component {
         <Slideshow/>
     </div>
     );
-  }
+  } 
+ 
 }
 
 export default App;
