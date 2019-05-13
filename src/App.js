@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Home from './pages/home';
-// import Body from './pages/body';
-import Slideshow from './pages/slide_effect';
-import Swiper from 'react-slider-swiper';
-
+import Home from './pages/home.js'
 class App extends Component {
   render() {
     return (
      <div>            
-        {/* <Home/> */}
-        <Slideshow/>
+        <Home/>     
     </div>
     );
   } 
