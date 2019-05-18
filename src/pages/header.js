@@ -6,9 +6,9 @@ class Header extends Component{
             <div className="header-wrapper">
                 <div className="content-header">
                         <a className="logo" href="/">
-                            Chuluunbor
+                            chuluunbor
                         </a>
-                {/* <div class="dots"></div> */}
+                <div className="dots"></div>
                 </div>
           </div>
         )
