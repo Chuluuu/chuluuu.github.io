@@ -29,7 +29,7 @@
     letter-spacing: -3px;
     padding: 40px 20px 0px 90px;
     display: block;
-    /* background: url(/images/logo.png) no-repeat 0px -4px; */
+    background: url(../images/logo.png) no-repeat 0px -4px;
     flex-grow: 0;
     align-self: stretch;
 }
@@ -88,6 +88,10 @@
         justify-content: space-between;
         align-items: stretch;
         align-content: center;
+        @media (max-width: 767px)
+        .intro {
+             flex-direction: column;
+        }
     }
     .intro .intro-description {
         flex-grow: 1;
@@ -106,9 +110,37 @@
         font-size: 50px;
         font-family: "Archer-LightItalic", Georgia, serif;
     }
+    .resume {
+        background: url(../images/border_bg.jpg) #fff repeat-x top left;
+        border-top: 30px solid #fff;
+        margin: 0;
+    }
+
+    .resume h1 {
+        background-color: #fff;
+        margin: -10px auto 0 auto;
+        width: 250px;
+        /* z-index: 5; */
+        line-height: 1.3em;
+        font-size: 24px;
+        text-align: center;
+        font-weight: normal;
+        font-family: "Archer-Book", Georgia, Serif;
+    }
+    .resume .resume-summary {
+        text-align: justify;
+        margin: 30px auto;
+        padding: 0 15px;
+        display: block;
+        font-weight: normal;
+        line-height: 1.5em;
+    }
+
 
     .react-slideshow-container {
-        height: 400px;
+        /* height: 400px; */
+        padding-top: 80px;
+        
     }
     .each-slide {
         text-align: center;
@@ -122,7 +154,33 @@
         width: 100%;
         
       }
-
+     
+      .each-fade {
+        display: flex;
+        text-align: center;
+      }
+      
+      .each-fade .image-container {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+      }
+      
+      .each-fade .image-container img {
+        width: 100%;
+        height: 400px;
+      }
+      
+      .each-fade h2 {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background: #adceed;
+      }
       .slide-container {
         width: 100%;
         margin: auto; }
+
+       
