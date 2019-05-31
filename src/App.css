@@ -191,4 +191,15 @@
       width: 100%;
       margin: auto; }
 
-     
+      .resume-skills ul li {
+        list-style-type: none;
+        text-align: right;
+        height: 17px;
+        margin: 0 10px 0 0;
+        padding-right: 10px;
+        font-style: italic;
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 11px;
+        /* background: url(/images/about/dash.jpg) no-repeat 100% 50%; */
+    }

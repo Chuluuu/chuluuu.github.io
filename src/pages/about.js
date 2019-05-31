@@ -40,8 +40,24 @@ class about extends Component {
                   <div class="resume-summary">
                     I consider myself a generalist—shifting focus to whatever the business' needs are. I split my time between managing ten people and collaborating with the VP of Engineering and the CTO on behind-the-scences opperational fun. Having established our code standards for all our SASS, I review pull requests and work on features whenever I have bandwidth. When I'm not an individual contributor, or doing operational work, I dedicate my time to my direct reports, making sure they are happy, engaged, learning, and have what they need to be highly functional contributors.
                   </div>
+                  <div class="resume-block">
+              <div class="section-label--right">skills</div>
+              <div class="resume-skills--desktop">
+                <div class="resume-skills">
+                  <ul>
+                    <li>expert</li>
+                    <li>advanced</li>
+                    <li>intermediate</li>
+                    <li>beginner</li>
+                  </ul>
+                </div>
+               
+              </div>
+              
+            </div>
                 </div>
               </div> 
+
         
         );
     }
